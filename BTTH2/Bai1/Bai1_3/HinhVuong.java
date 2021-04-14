@@ -1,4 +1,4 @@
-package Bai1;
+package Bai1.Bai1_3;
 
 /**
  * HinhVuong
@@ -27,6 +27,7 @@ public class HinhVuong extends DaGiac{
         System.out.println("Chu vi hinh vuong bang "+ this.canhHinhVuong*4);
     } 
 
+    @Override
     public void inDienTich(){
         System.out.println("Dien tich hinh vuong bang "+ Math.pow(this.canhHinhVuong, 2));
     }

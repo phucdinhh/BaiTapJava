@@ -1,4 +1,4 @@
-package Bai1;
+package Bai1.Bai1_1;
 
 public class Point{
     private double x;

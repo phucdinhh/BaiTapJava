@@ -1,4 +1,4 @@
-package Bai1;
+package Bai1.Bai1_2;
 
 public class Fraction {
     private int tuSo;
