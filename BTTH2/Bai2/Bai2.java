@@ -27,10 +27,51 @@ public class Bai2 {
             
         }
 
+        System.out.print("Nhung sinh vien co hoc luc xuat sac la: ");
         for(int i = 0; i< n; i++){
-            System.out.println(sv[i].getTen());
-
-            System.out.println(sv[i].getDiemTB());
+            if(sv[i].getDiemTB() >= 8 && sv[i].getDiemNMLT() >= 9){
+                System.out.print(sv[i].getTen()+" ");
+            }
         }
+
+        double max = 0;
+        for(int i = 0; i< n; i++){
+            for(int j = i+1; j < n; j++){ 
+                if(sv[j].getDiemTB() >= max){
+                    max = sv[j].getDiemTB();
+                }
+            }
+        }
+        System.out.print("\nSinh vien co diem trung binh cao nhat la: ");
+        for(int i = 0; i< n; i++){
+            if(sv[i].getDiemTB()==max) System.out.print(sv[i].getTen()+" ");
+        }
+
+        for(int i = 0; i< n; i++){
+            for(int j = i+1; j < n; j++){
+                if(sv[i].getDiemTB() < sv[j].getDiemTB()){
+                    SinhVien temp = new SinhVien();
+                    temp = sv[i];
+                    sv[i] = sv[j];
+                    sv[j] = temp;
+                }
+            }
+        }
+        System.out.print("\nsinh vien co diem trung binh giam dan la: ");
+        for(int i = 0; i< n; i++){
+            System.out.print(sv[i].getTen()+" ");
+        }
+
+        System.out.print("\nTop 10 sinh vien co diem trung binh cao nhat la: ");
+        if(n<10){
+            for(int i = 0; i < n; i++){
+                System.out.print(sv[i].getTen()+" ");
+            }
+        } else {
+            for(int i = 0; i < 10; i++){
+                System.out.print(sv[i].getTen()+" ");
+            }
+        }
+        
     }
 }

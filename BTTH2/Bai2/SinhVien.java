@@ -64,6 +64,6 @@ public class SinhVien {
     }
 
     public double getDiemTB(){
-        return diemTB;
+        return Math.floor((diemTB * 100)/100);
     }
 }
