@@ -9,6 +9,7 @@ public class Bai1_2 {
         Fraction f2 = new Fraction();
         int temp;
 
+        // Nhập dữ liệu
         System.out.print("Nhap tu so cua A:");
         temp = scanner.nextInt();
         f1.setTuSo(temp);
@@ -27,6 +28,7 @@ public class Bai1_2 {
 
         scanner.close();
 
+        // Thực hiện tính tổng, hiệu, tích, thương
         Fraction tong = f1.congPhanSo(f2);
         Fraction hieu = f1.truPhanSo(f2);
         Fraction tich = f1.nhanPhanSo(f2);

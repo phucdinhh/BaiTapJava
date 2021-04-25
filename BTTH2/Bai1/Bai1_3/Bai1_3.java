@@ -11,6 +11,7 @@ public class Bai1_3 {
 
         double temp;
 
+        // Nhập dữ liệu
         System.out.print("Nhap do dai canh cua hinh vuong: ");
         temp = scanner.nextDouble();
         hinhVuong.setCanh(temp);
@@ -41,6 +42,7 @@ public class Bai1_3 {
 
         scanner.close();
 
+        //  Xuất các thông tin và tính chu vi, diện tích
         hinhVuong.inThongTin();
         hinhVuong.inChuVi();
         hinhVuong.inDienTich();
